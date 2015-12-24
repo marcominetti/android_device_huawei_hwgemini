@@ -1,9 +1,11 @@
+LOCAL_PATH := device/huawei/hwgemini
 USE_CAMERA_STUB := true
 
 # inherit from the proprietary version
--include vendor/huawei/hwgemini/BoardConfigVendor.mk
+#-include vendor/huawei/hwgemini/AndroidBoardVendor.mk
 
 TARGET_ARCH := arm64
+TARGET_ARCH_VARIANT := armv8
 TARGET_NO_BOOTLOADER := true
 TARGET_BOARD_PLATFORM := kirin930
 TARGET_CPU_ABI := arm64-v8a

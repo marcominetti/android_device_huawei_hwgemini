@@ -1,2 +1,2 @@
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/device_hwgemini.mk
+    $(LOCAL_DIR)/aicp_hwgemini.mk

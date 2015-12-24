@@ -12,17 +12,23 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
- 
-$(call inherit-product, device/huawei/hwgemini/device_hwgemini.mk)
- 
 # Enhanced NFC
 #$(call inherit-product, vendor/cm/config/nfc_enhanced.mk)
  
 # Inherit CM common Phone stuff.
-$(call inherit-product, vendor/cm/config/common_full_phone.mk)
+#$(call inherit-product, vendor/cm/config/common_full_phone.mk)
+
+$(call inherit-product, device/huawei/hwgemini/aicp_hwgemini.mk)
+
+PRODUCT_RELEASE_NAME := gem-703l
+
+# product
+PRODUCT_DEVICE := aicp_hwgemini
+PRODUCT_BRAND := Huawei
+PRODUCT_NAME := aicp_hwgemini
+PRODUCT_MODEL :=  GEM-703L
+PRODUCT_MANUFACTURER := Huawei
+
  
 PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=GEM-703L BUILD_FINGERPRINT=HUAWEI/GEM-703L/HWGemini:5.1.1/HUAWEIGEM-703L/C233B109:user/release-keys PRIVATE_BUILD_DESC="GEM-703L-user 5.1.1 HUAWEIGEM-703L C233B109 release-keys"
- 
-PRODUCT_NAME := gem-703l
-PRODUCT_DEVICE := hwgemini
- 
+
