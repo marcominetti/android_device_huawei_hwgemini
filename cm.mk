@@ -23,7 +23,7 @@ $(call inherit-product, device/huawei/hwgemini/aicp_hwgemini.mk)
 PRODUCT_RELEASE_NAME := gem-703l
 
 # product
-PRODUCT_DEVICE := aicp_hwgemini
+PRODUCT_DEVICE := hwgemini
 PRODUCT_BRAND := Huawei
 PRODUCT_NAME := aicp_hwgemini
 PRODUCT_MODEL :=  GEM-703L
